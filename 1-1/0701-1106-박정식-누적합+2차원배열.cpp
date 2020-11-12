@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-    int n, a[11][11]={0, }, m[11][11]={0, }, i, j;
+    int n, a[101][101]={0, }, m[101][101]={0, }, i, j;
     scanf("%d", &n);
     
     for(i=1;i<=n;i++){

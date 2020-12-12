@@ -148,7 +148,8 @@ void bogoSort(int s, int e, int d[], sortsys sos){
 	}
 	
 	while(1){
-		for(i=s+1;i<=e;i++) if(sos(d[i], d[i-1])) break;
+		for(i=s+1;i<=e;i++)
+			if(sos(d[i], d[i-1])) break;
 		if(i>e) break;
 		l=n;
 		
@@ -167,20 +168,26 @@ void bogoSort(int s, int e, int d[], sortsys sos){
 
 void radixSort(const int start, const int end, int a[], const int base){
     int ex, i, j, max=a[start];
-    for(i=start; i<=end; i++) if(a[i]>max) max=a[i];
+    for(i=start; i<=end; i++)
+		if(a[i]>max)
+			max=a[i];
     
     for(ex=1; ex<=max; ex*=base){
     	int output[end+1], count[base]={};
     	
-    	for(i=start; i<=end; i++) count[(a[i]/ex)%base]++;
-    	for(i=1; i<base; i++) count[i] += count[i-1];
+    	for(i=start; i<=end; i++)
+			count[(a[i]/ex)%base]++;
+			
+    	for(i=1; i<base; i++)
+			count[i] += count[i-1];
     	
     	for(i=end; i>=start; i--){
     		j = (a[i]/ex)%base;
     		output[count[j]-1+start] = a[i];
     		count[j]--;
     	}
-    	for(i=start; i<=end; i++) a[i] = output[i];
+    	for(i=start; i<=end; i++)
+			a[i] = output[i];
     }
 }
 

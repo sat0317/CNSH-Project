@@ -4,15 +4,18 @@
 '''
 
 from itertools import *
+from math import *
 
 ans=[]
 
 for i in range(2, 10000):
     sum=0
 
-    for j in range(1, i-1):
+    for j in range(1, int(sqrt(i))+1):
         if i%j==0 :
             sum+=j
+            if (i//j != j) & (i//j != i):
+                sum+=i//j
     if i==sum:
         ans.append(i)
 print(ans)

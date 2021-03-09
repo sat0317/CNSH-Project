@@ -18,4 +18,6 @@ for i in range(2, 10000):
                 sum+=i//j
     if i==sum:
         ans.append(i)
-print(ans)
+
+for i in range(len(ans)):
+    print(ans[i])

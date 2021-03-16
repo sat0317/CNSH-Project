@@ -11,6 +11,7 @@ A = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2', 'c3']
 
 B = list(permutations(A[:6]))
 ans = [i+('c3', ) for i in B if abs(i.index('a1') - i.index('a2')) == 1 and abs(i.index('b1') - i.index('b2')) == 1]
+#all(tnf, tnf, tnf, tnf, tnf, ...)
 ans.sort()
 
 print(len(ans))

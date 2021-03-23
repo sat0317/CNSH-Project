@@ -24,7 +24,17 @@ c=[]
 for i in b:
     ima = i.index(4)
     imb = i.index(5)
-    
+
+'''
+수업 코드 필기
+for i in A:
+    a = i.index(4)
+    b = i.index(5)
+    if i<=a<=5 and 1<=b<=5:
+        if i[a-1]>4 and ...#생략
+        #and와 all 차이: and는 하나하나 사용하지만 all은 한 번에 모두 사용
+        
+'''
         
 print(len(c))
 print(c)

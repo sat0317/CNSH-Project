@@ -24,8 +24,7 @@ c=[]
 for i in b:
     ima = i.index(4)
     imb = i.index(5)
-    if all([4<i[ima-1], 4<i[ima+1], 5>i[ima-1], 5>i[ima+1]]):
-        c.append(i)
+    
         
 print(len(c))
 print(c)

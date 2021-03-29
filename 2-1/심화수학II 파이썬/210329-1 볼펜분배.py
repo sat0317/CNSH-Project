@@ -43,10 +43,10 @@ for i in range(0, 2):
         for k in range(0, 5):
             if i+j+k == 5:
                 #W: Black (aka White), R: Red, B: Blue
-                A.append(('W'*i+'R'*j+'B'*k, i, j, k))
-
+                A.append('W'*i+'R'*j+'B'*k)
+                
 D=[]
 for i in A:
     D.extend(cc(i))
-print(len(set(D)))
-print(set(D))
+print(len((D)))
+print((D))

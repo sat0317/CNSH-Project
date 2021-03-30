@@ -15,7 +15,7 @@ ans = []
 for i in A:
     a  = i.index('A')
     if a!=0 and a!=8:
-        if (i[a-1]) in [1, 2, 3, 4] and (i[a+1]) in [1, 2, 3, 4]:
+        if type(i[a-1])==int and type(i[a+1])==int:
             ans.append(i)
 print(len(ans))
 print(frac(len(ans), len(A)))

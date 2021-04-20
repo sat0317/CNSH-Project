@@ -12,6 +12,7 @@ li=[]
 for i in range(1, 5):
     li.extend(list(combinations(X, i)))
 allcase = list(permutations(li, 3))
+'''
 ans = []
 for A in li:#초안
     tempA=[]
@@ -29,6 +30,7 @@ print(len(ans))
 print(ans)
 print(len(allcase))
 print(frac(len(ans), len(allcase)))
+'''
 
 ans=[]
 for A in li:#2안 : Correct Answer

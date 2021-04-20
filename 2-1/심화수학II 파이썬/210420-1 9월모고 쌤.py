@@ -3,11 +3,11 @@ from itertools import *
 X = [1, 2, 3, 4]
 powerX = []
 for i in range(1, 5):
-    powerX.append(combinations(X, i))
+    powerX.extend(list(combinations(X, i)))
     
 print(powerX)
 
-superX = list(p(powerX, 3))
+superX = list(permutations(powerX, 3))
 
 bubunX = []
 for i in superX:

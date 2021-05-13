@@ -1,0 +1,42 @@
+ps: problem solving
+카카오와 네이버에서는 코딩테스트를 하면서 이러한 알고리즘을 씀
+또한 배워두면 쓸모있을것임
+
+1. Baekjoon Online Judge 
+온라인에 제출하면 정답인지 아닌지 봐줌
+가장 많은 문제
+
+2. 기본자료형
+queue: 선입후출, push, pop, #include <queue>, queue<int>, q.empty, q.size, front, back
+stack: 선입선출, pop, push, top, stack<int>, #include <stack>, s.empty, s.size
+vector: front, back, begin, end, push_back/pop_back(스택처럼), 인덱스참조(V[i]), #include <vector>, vector<int>, enpty, size
+2차원벡터: 세로축은 대체로 고정, 가로축은 늘릴 수 있음, vector<int> name[size];
+pair: 구조체, pair<int, int>, p.first, p.end, #include <utility>, 벡터, 큐, 스택을 쓰면 헤더 생략 가능
+
+3. 정렬
+#include <algorithm>
+using namespace std;
+sort(자료시작, 자료끝범위, 자료정렬기준);
+sort(v.begin(), v.end())
+sort(a, a+10);
+sort(d+n, d+m+1);
+vector: iterator 필요; begin과 end가 vector의 iterator.
+정렬기준: bool 함수, return 0 or 1
+
+4. DP (동적 계획법)
+주어진 문제를 풀기 위해서 여러 개의 하위 문제로 나눈 이후 결합하는 것(분할정복)
+-> 점화식과 유사
+
+5. 냅색 알고리즘
+- 제한된 무게로 최대 가치 얻기
+1. 모두 넣어보기 (완전탐색)
+2. 가격이 높은 것부터 넣기
+3. 가격/무게가 높은거 넣기
+->모두 틀림
+1. n-1번째 보석 중 최적으로 고른 부분집합
+n번째 보석을 선택한다면: A+N의 가치 -> 무게 초과되면 안됨!
+선택하지 않는다면: A의 가치
+1. 무게 w, 가치 v, 2차원 dp
+2. 개수, 가방무게, 무게/가치 입력
+3. 이중포문으로 점화식 돌리기
+4. 답: dp[n][k]

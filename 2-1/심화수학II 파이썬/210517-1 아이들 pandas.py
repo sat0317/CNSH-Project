@@ -52,3 +52,27 @@ sdos=dos/21
 print('상대도수: ', sdos)
 print(sum(sdos))
 print('누적도수: ', [sum(dos[0:i+1]) for i in range(len(dos))])
+
+##########
+print("#####")
+import matplotlib.pyplot as plt
+noodos=pd.Series([sum(dos[0:i+1]) for i in range(len(dos))], index=[20, 25, 30, 35, 40])
+print(noodos)
+
+plt.hist(weight, rge, rwidth=0.7, color='#aa00cc', alpha=0.5) #rwidth: 간격, color: 색상, alpha: 투명도
+plt.xlabel('tall', fontsize=15)
+plt.xticks(fontsize=14, fontweight='bold')
+plt.yticks(fontsize=14)
+plt.xlim(0, 100)#범위
+plt.ylim(0, 10)
+plt.grid()
+
+plt.hist([sum(dos[0:i+1]) for i in range(len(dos))], rge, rwidth=0.7, color='red', alpha=0.5)
+plt.legend(fontsize='13')
+plt.show()
+
+plt.hist(sdos, rge, rwidth=0.7, color='green')
+plt.legend(fontsize='13')
+plt.show()
+
+

@@ -38,4 +38,24 @@ fine_dust[2] = data2[2].find('span', {'class':'num'}).text
 print("오존지수:", fine_dust[2])
 
 
+# 여기부터는 요일별
 
+print('\n\n일별 기온 안내')
+data1 = soup.find('ul',{'class':'list_area _pageList'})
+data2 = data1.findAll('dd')
+
+daydata = data1.findAll('span', {'class':'day_info'})
+day = []
+for i in range(5):
+    day.append(daydata[i].text.replace(daydata[i].find('span').text, ''))
+
+_temp = []
+low_temp = []
+high_temp = []
+for i in range(5):
+    _temp.append(data2[i].text.split('/'))
+    low_temp.append(_temp[i][0].replace('°', ''))
+    high_temp.append(_temp[i][1].replace('°', ''))
+    
+for i in range(5):
+    print(day[i], '최저: ', low_temp[i]+'℃, ', '최고: ', high_temp[i]+'℃', sep='')

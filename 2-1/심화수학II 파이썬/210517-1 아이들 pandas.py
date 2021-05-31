@@ -65,12 +65,13 @@ plt.xticks(fontsize=14, fontweight='bold')
 plt.yticks(fontsize=14)
 plt.xlim(0, 100)#범위
 plt.ylim(0, 10)
+plt.legend(fontsize='13')
 plt.grid()
 
-plt.hist([sum(dos[0:i+1]) for i in range(len(dos))], rge, rwidth=0.7, color='red', alpha=0.5)
-plt.legend(fontsize='13')
+print(plt.figure())
 plt.show()
-
+plt.hist([sum(dos[0:i+1]) for i in range(len(dos))], rge, rwidth=0.7, color='red', alpha=0.5)
+plt.show()
 plt.hist(sdos, rge, rwidth=0.7, color='green')
 plt.legend(fontsize='13')
 plt.show()

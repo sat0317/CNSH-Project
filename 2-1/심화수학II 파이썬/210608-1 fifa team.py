@@ -54,3 +54,6 @@ for i in te:
     chunsik[i]=fteam.loc[i].sum()[14]+fteam.loc[i].sum()[15]*3
 
 print(max(chunsik, key=chunsik.get))
+# 참고: '{} and {}'.format(aa, bb)
+
+

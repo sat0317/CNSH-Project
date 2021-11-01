@@ -1,5 +1,7 @@
+
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bs
+from urllib.parse import quote_plus
 
 searchLink = {
     'google':'https://www.google.com/search?q=',
@@ -13,10 +15,24 @@ searchLink = {
 }
 
 searchKeyword = input("검색할 단어를 입력하세요: ")
-
-searchResult = {}
+searchKey = []
+searchResult = []
 
 for i in searchLink.keys():
-    searchResult[i]=requests.get(searchKeyword[i])
+    searchKey.append(i)
 
+for i in range(len(searchKey)):
+    searchResult.append(requests.get(searchLink[searchKey[i]]+quote_plus(searchKeyword)))
 
+#Google
+
+soup = bs(searchResult[0].text, 'html.parser')
+print('Google\n')
+data1 = soup.findAll('a', {'class':'LC20lb DKV0Md'})
+try:
+    for i in data1[0:5]:
+        print(i.text)
+except:
+    print("검색결과 끝")
+
+#https://sssunho.tistory.com/17 이거 참고하면 좋

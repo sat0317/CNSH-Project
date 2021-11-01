@@ -1,4 +1,4 @@
-
+import os
 import requests
 from bs4 import BeautifulSoup as bs
 from urllib.parse import quote_plus
@@ -34,5 +34,6 @@ try:
         print(i.text)
 except:
     print("검색결과 끝")
+
 
 #https://sssunho.tistory.com/17 이거 참고하면 좋

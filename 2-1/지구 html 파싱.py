@@ -7,4 +7,4 @@ soup = bs(html.text,'html.parser')
 print('DAUM NEWS\n')
 data1 = soup.findAll('a', {'class':'link_txt'})
 for i in data1[0:24]:
-    print(i.text)
+    print(i.text.strip())

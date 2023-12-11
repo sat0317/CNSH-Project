@@ -1,0 +1,4 @@
+﻿  assembly.cpp
+D:\!!GITHUB\CNSH-Project\3-1\assembly\assembly\assembly\assembly.cpp(9,5): error C4235: 비표준 확장이 사용됨: 이 아키텍처에서는 '__asm' 키워드를 사용할 수 없습니다.
+D:\!!GITHUB\CNSH-Project\3-1\assembly\assembly\assembly\assembly.cpp(10,5): error C4235: 비표준 확장이 사용됨: 이 아키텍처에서는 '__asm' 키워드를 사용할 수 없습니다.
+D:\!!GITHUB\CNSH-Project\3-1\assembly\assembly\assembly\assembly.cpp(11,5): error C4235: 비표준 확장이 사용됨: 이 아키텍처에서는 '__asm' 키워드를 사용할 수 없습니다.

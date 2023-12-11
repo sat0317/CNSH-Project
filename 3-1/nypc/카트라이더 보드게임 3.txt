@@ -1,0 +1,12 @@
+22
+Moved from 1 to 2 (dice = 1, lucci = 2)
+Moved from 2 to 6 (dice = 4, lucci = 2)
+Moved from 6 to 10 (dice = 4, lucci = 2)
+Moved from 10 to 13 (dice = 3, lucci = 3)
+Moved from 13 to 19 (dice = 6, lucci = 2)
+Moved from 19 to 23 (dice = 4, lucci = 2)
+Moved from 23 to 27 (dice = 4, lucci = 2)
+Moved from 27 to 33 (dice = 6, lucci = 3)
+Moved from 33 to 39 (dice = 6, lucci = 1)
+Moved from 39 to 41 (dice = 1, lucci = 3)
+

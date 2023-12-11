@@ -1,0 +1,6 @@
+9
+Moved from 1 to 2 (dice = 1, lucci = 2)
+Moved from 2 to 6 (dice = 4, lucci = 2)
+Moved from 6 to 10 (dice = 4, lucci = 2)
+Moved from 10 to 13 (dice = 3, lucci = 3)
+
